@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>SOC-Task-Checklist</title>
+    </head>
+    <style>
+        .maincontainer{
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 3%;
+            height: 950px;
+            border: 3px groove rgb(46, 46, 167);
+        }
+        h1{
+            text-align: center;
+            color: rgb(46, 46, 167);
+            font-size: 40px;
+        }
+        .form{
+            width: 90%;
+            margin-left: 5%;
+            height: 770px;
+    
+        }
+        .form>input{
+            margin-top: 0.3%;
+            margin-bottom: 1%;
+            width: 100%;
+            height: 40px;
+            border: 2px groove rgb(46, 46, 167);
+            font-size: 25px;
+            padding-left: 5%;
+        }
+        .form>label{
+            font-size: 25px; 
+            margin-top: 2%;
+        }
+        #follow{
+            float: left;
+            height: 25px;
+            width: 25px;
+        }
+        #follow2{
+            float: left;
+            height: 25px;
+            width: 25px;
+        }
+        #follow3{
+            float: left;
+            height: 25px;
+            width: 25px;
+        }
+        #submit{
+            width: 200px;
+            height: 40px;
+            border: none;
+            background-color: orangered;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            margin-left: 40%;
+        }
+    </style>
+    <body>
+        <div class="maincontainer">
+            <h1>SOC Task Checklist</h1>
+            <form class="form">
+                <label>Number of Support Tickets Active:</label>
+                <input type="number" placeholder="Number of Support Tickets Active" required>
+                <label>Number of Service Request Active:</label>
+                <input type="number" placeholder="Number of Service Request Active" required>
+                <label>Number of Incidents Active:</label>
+                <input type="number" placeholder="Number of Incidents Active" required>
+                <label>Number of Support Tickets reduced:</label>
+                <input type="number" placeholder="Number of Support Tickets reduced" required>
+                <label>Number of Service Request reduced:</label>
+                <input type="number" placeholder="Number of Service Request reduced" required>
+                <label>Number of Incidents reduced:</label>
+                <input type="number" placeholder="Number of Incidents reduced" required>
+                <label>How much do you rate yourself today out of 10?:</label>
+                <input type="number" placeholder="How much do you rate yourself today out of 10?" required>
+                <div style="margin-top: 2%;">
+                    <input id="follow" type="checkbox">
+                <label style="font-size: 25px;" for="follow">Followed up all the support & Service tickets and incidents</label>
+                <div style="margin-top: 2%;">
+                    <input id="follow2" type="checkbox">
+                    <label style="font-size: 25px;" for="follow2">Escalated all support & Service tickets and incidents which are not resolved on time</label>
+                </div>
+                <div style="margin-top: 2%;">
+                    <input id="follow3" type="checkbox" checked>
+                    <label style="font-size: 25px;" for="follow3">I agree to get my tasks reviewed by my seniors and I ensure that my performance will be better consistently</label>
+                </div>
+                
+                </div>
+                
+                
+            </form>
+            <button id="submit" onclick="submit()">SUBMIT</button>
+        </div>
+        <script>
+            function submit(){
+                window.print()
+            }
+        </script>
+    </body>
+</html>
